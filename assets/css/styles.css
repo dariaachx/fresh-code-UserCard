@@ -11,7 +11,7 @@
 .container {
     border: 1px solid black;
     border-radius: 10px;
-    width: 600px;
+    width: 400px;
     margin: 0 auto;
     margin-top: var(--margin-top);
 }
@@ -38,7 +38,8 @@
 
 .photo {
     object-fit: cover;
-    border: 10px solid rgb(196, 195, 195);
+    border: 10px solid rgb(244, 243, 243);
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
     border-radius: 50%;
     width: inherit;
     height: inherit;
@@ -60,7 +61,6 @@ button {
     margin-top: var(--margin-top);
     border: none;
     border-radius: 10px;
-    box-shadow: #362963 0px 5px 10px;
     background: #5fa5e7;
     color: white;
 
@@ -71,27 +71,34 @@ button {
     margin-top: var(--margin-top);
     background: #362963;
     color: white;
-    height: 100px;
+    height: 65px;
+    border-radius: 0 0 10px 10px;
+    font-size: 12px;
 }
 
 .footer-container { 
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 200px;
+    width: calc(400px/3);
     gap: 5px;
 }
 
+.name-footer p {
+    color: rgb(177, 68, 68);
+}
+
 .slash {
-    border-left: 1px solid rgba(237, 225, 225, 0.5);
+    border-left: 1px solid rgba(237, 225, 225, 0.1);
 }
 
 .img-footer i {
-    font-size: 40px;
-    color: rgb(177, 68, 68)
+    font-size: 20px;
+    color: rgb(177, 68, 68);
 }
 
 .text-footer {
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
