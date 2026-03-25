@@ -37,6 +37,7 @@
 }
 
 .photo {
+    object-fit: cover;
     border: 10px solid rgb(196, 195, 195);
     border-radius: 50%;
     width: inherit;
@@ -54,37 +55,40 @@
 }
 
 button {
-    width: 120px;
+    width: 150px;
     height: 50px;
     margin-top: var(--margin-top);
     border: none;
     border-radius: 10px;
+    box-shadow: #362963 0px 5px 10px;
     background: #5fa5e7;
     color: white;
+
 }
 
 .footer {
-    display: flex;
-    justify-content: space-around;
+    display: flex;   
     margin-top: var(--margin-top);
     background: #362963;
     color: white;
     height: 100px;
 }
 
-.footer-container {
+.footer-container { 
     display: flex;
     align-items: center;
-    gap: 15px;  
+    justify-content: center;
+    width: 200px;
+    gap: 5px;
 }
 
 .slash {
     border-left: 1px solid rgba(237, 225, 225, 0.5);
-    gap: 50px;
 }
 
 .img-footer i {
-    font-size: 24px;
+    font-size: 40px;
+    color: rgb(177, 68, 68)
 }
 
 .text-footer {
